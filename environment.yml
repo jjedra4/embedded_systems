@@ -1,0 +1,32 @@
+name: embedded-ai
+
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pip
+  - jupyterlab
+  - ipykernel
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib>=3.7
+  - seaborn
+  - scikit-learn
+  - pillow
+  - pyyaml
+  - psutil
+  - opencv
+  - onnx
+  - onnxruntime
+  - pytorch>=2.0
+  - torchvision>=0.15
+  - pip:
+      - gdown>=4.7
+      - esptool
+      - platformio
+      - pyserial
+      - paho-mqtt
