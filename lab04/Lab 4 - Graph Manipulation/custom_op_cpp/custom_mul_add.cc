@@ -117,7 +117,7 @@ void CustomMulAddKernel::Compute(OrtKernelContext* context) {
   float* out = Y.GetTensorMutableData<float>();
   size_t end = static_cast<size_t>(dimensions[0] * dimensions[1] * dimensions[2]);
   for (size_t i = static_cast<size_t>(0); i < end; ++i) {
-    out[i] = static_cast<float>(i);
+    out[i] = input_0[i] * 3.5f + input_1[i];
   }
 }
 
